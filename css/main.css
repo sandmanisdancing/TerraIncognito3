@@ -1,0 +1,261 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: #020912;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.scrollable_area {
+    display: flex;
+    flex-direction: column;
+    background: #020912;
+    background: linear-gradient(to bottom, #040404, #020912);
+}
+
+.scrollable_area > img {
+    width: 100%;
+}
+
+.tour_filters {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: inherit;
+    background: #040404;
+}
+
+.tour_filters_valuable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    height: inherit;
+    width: 90%;
+}
+
+.tour_filters_valuable_part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour_filters_valuable_part2 > img {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 0 10px;
+}
+
+.tour_filters_valuable_part3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Roboto Light";
+    font-size: 24px;
+    color: #F24332;
+}
+
+.tour_filters_valuable_part3 > img {
+    margin-right: 10px;
+}
+
+.container_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 560px;
+    background: #051327;
+}
+
+.tour > img {
+    width: 100%;
+}
+
+.tour_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+}
+
+.details_item {
+    font-family: "Roboto Light";
+    font-size: 20px;
+    margin: 0 22px 0 22px;
+    width: 60px;
+    height: 18px;
+}
+
+.details_item > img {
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+}
+
+.tour_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: "HelveticaNeueCyr Black";
+    font-size: 26px;
+}
+
+.tour_descr {
+    width: 340px;
+    height: 130px;
+    font-family: "Roboto Thin";
+    font-size: 22px;
+}
+
+.order_button {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    background-color: #F24332;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    align-self: flex-start;
+    justify-content: center;
+    margin: 20px 0px 0 20px;
+}
+
+hr {
+    border-color: #051327;
+    width: 90%;
+}
+
+.gallery_sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: inherit;
+    font-family: "HelveticaNeueCyr";
+    font-size: 36px;
+    color: white;
+
+}
+
+.gallery_wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery1, .gallery2 {
+    display: grid;
+    grid-column-gap: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.gallery1 {
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+.gallery2 {
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+.gallery_item {
+    background: #051327;
+    height: 450px;
+    background-image: url("../images/gallery3.png");
+}
+
+.look_more_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.look_more {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: 45px;
+    font-family: "Roboto Light";
+    font-size: 24px;
+    color: #F24332;
+}
+
+.look_more > img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.partners {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-family: "HelveticaNeueCyr Black";
+    font-size: 24px;
+    height: 50px;
+}
+
+.partners_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+
+.partner {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Roboto Light";
+    font-size: 16px;
+    margin: 0 30px 0 30px;
+    text-align: center;
+}
+
+.partner img {
+    height: 75px;
+}
+
+.arrow {
+    width: 35px;
+    height: 35px;
+}
+
+.grey_hr {
+    border-color: #A9A9A9;
+    width: 90%;
+}
+
+.follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Regular";
+    font-size: 24px;
+    color: #E1E1E1;
+    height: 90px;
+}
+
+.follow > a > img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 10px;
+}
+
+
