@@ -20,6 +20,12 @@
     src: url(../fonts/HelveticaBlack.ttf);
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -39,45 +45,97 @@ body {
     width: 100%;
 }
 
-.tour_filters {
+.tours {
+    width: 90%;
+    margin: auto;
+}
+
+.tours__filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+.tours__filters-list {
     display: flex;
     justify-content: center;
     height: 70px;
-    width: inherit;
-    background: #040404;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    grid-column: span 2;
+    padding-left: calc((100% + 15px) / 2);
 }
 
-.tour_filters_valuable {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 15px;
-    height: inherit;
-    width: 90%;
+.tours__filters-item {
+    margin: auto 10px;
 }
 
-.tour_filters_valuable_part2 {
+.tours__filters-btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.tours__filters-btn img {
+    vertical-align: middle;
+}
+
+.tours__filters-all {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.tour_filters_valuable_part2 > img {
-    width: 25px;
-    height: 25px;
-    margin: 0 10px 0 10px;
-}
-
-.tour_filters_valuable_part3 {
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
-    font-family: "Roboto Light";
+}
+
+.checkbox-toggle {
+    position: relative;
+}
+
+.checkbox-toggle__label {
     font-size: 24px;
     color: #F24332;
+    padding-left: 55px;
+    font-family: "Roboto Light";
+    transition: opacity .15s;
 }
 
-.tour_filters_valuable_part3 > img {
-    margin-right: 10px;
+.checkbox-toggle__label:hover {
+    opacity: .8;
+}
+
+.checkbox-toggle__label:before {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 25px;
+    left: 0;
+    top: 2px;
+    border: 1px solid #F24332;
+    border-radius: 15px;
+}
+
+.checkbox-toggle__label:after {
+    position: absolute;
+    content: '';
+    width: 19px;
+    height: 19px;
+    background-color: #F24332;
+    border-radius: 15px;
+    left: 3px;
+    top: 5px;
+    transition: transform .15s;
+}
+
+.checkbox-toggle__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox-toggle__input:checked + .checkbox-toggle__label:after {
+    transform: translateX(20px);
 }
 
 .container_wrap {

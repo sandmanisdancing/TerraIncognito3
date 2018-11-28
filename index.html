@@ -17,22 +17,31 @@
     </nav>
     <img src="images/main_screen.jpg">
 
-    <div class="tour_filters">
-        <div class="tour_filters_valuable">
-            <div class="tour_filters_valuable_part1"></div>
-            <div class="tour_filters_valuable_part2">
-                <img src="images/arch_icon.png">
-                <img src="images/natwond_icon.png">
-                <img src="images/underwater_icon.png">
-                <img src="images/greenery_icon.png">
-            </div>
-            <div class="tour_filters_valuable_part3">
-                <img src="images/toggle.png">
-                show all
+    <section class="tours">
+        <div class="tours__filters">
+            <ul class="tours__filters-list">
+                <li class="tours__filters-item">
+                    <button class="tours__filters-btn"><img src="images/arch_icon.png" alt=""></button>
+                </li>
+                <li class="tours__filters-item">
+                    <button class="tours__filters-btn"><img src="images/natwond_icon.png" alt=""></button>
+                </li>
+                <li class="tours__filters-item">
+                    <button class="tours__filters-btn"><img src="images/underwater_icon.png" alt=""></button>
+                </li>
+                <li class="tours__filters-item">
+                    <button class="tours__filters-btn"><img src="images/greenery_icon.png" alt=""></button>
+                </li>
+            </ul>
+            <div class="tours__filters-all">
+                <div class="checkbox-toggle">
+                    <input id="sa" type="checkbox" class="checkbox-toggle__input">
+                    <label for="sa" class="checkbox-toggle__label">show all</label>
+                </div>
             </div>
         </div>
+    </section>
 
-    </div>
     <div class="container_wrap">
         <div class="container">
             <div class="tour">
