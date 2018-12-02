@@ -310,12 +310,6 @@ body {
     margin-bottom: 10px;
 }
 
-.partner {
-}
-
-.partner img {
-}
-
 .arrow {
     width: 35px;
     height: 35px;
@@ -336,10 +330,20 @@ body {
     height: 90px;
 }
 
-.follow > a > img {
+.follow__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.follow__list-item {
+    margin-left: 20px;
+}
+
+.follow__image {
     width: 20px;
     height: 20px;
-    margin: 0 10px 0 10px;
 }
 
 /* main menu */
@@ -350,6 +354,13 @@ body {
     text-align: center;
     position: relative;
 }
+.menu-main--footer {
+    padding: 8px 0;
+    border-top: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
+    font-size: 18px;
+    background-color: transparent;
+}
 .menu-main__list {
     list-style-type: none;
     margin: 0;
@@ -358,6 +369,9 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.menu-main__list--footer {
+    justify-content: center;
 }
 .menu-main__list + .menu-main__list {
     margin-left: 20px;
@@ -403,53 +417,4 @@ body {
     .menu-main li {
         display: block;
     }
-}
-
-/* footer menu */
-.brief_menu {
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    font-family: "Roboto Regular";
-    font-size: 18px;
-}
-.brief_menu:after {
-    content: "";
-    position: absolute;
-}
-.brief_menu li {display: inline-block;}
-.brief_menu a {
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 30px;
-    color: white;
-    transition: .3s linear;
-    position: relative;
-}
-.brief_menu a:before,
-.brief_menu a:after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 3px);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #F24332;
-    opacity: 0;
-    transition: .5s ease-in-out;
-}
-.brief_menu a:before {left: 5px;}
-.brief_menu a:after {right: 5px;}
-.brief_menu a.current:before,
-.brief_menu a.current:after,
-.brief_menu a:hover:before,
-.brief_menu a:hover:after {opacity: 1;}
-.brief_menu a.current,
-.brief_menu a:hover {color:  #F24332;}
-@media(max-width:680px) {
-    .brief_menu li {display: block;}
 }
