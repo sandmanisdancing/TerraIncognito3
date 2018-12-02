@@ -48,6 +48,8 @@ body {
 .tours {
     width: 90%;
     margin: auto;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #051327;
 }
 
 .tours__filters {
@@ -220,11 +222,6 @@ body {
     font-size: 18px;
     align-self: flex-start;
     margin: 20px 0px 0 20px;
-}
-
-hr {
-    border-color: #051327;
-    width: 90%;
 }
 
 .gallery_sign {
