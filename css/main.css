@@ -276,23 +276,26 @@ body {
 }
 
 .partners {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+
+}
+
+.partners__title {
+    text-align: center;
     color: white;
     font-family: "HelveticaNeueCyr Black";
     font-size: 24px;
-    height: 50px;
+    text-transform: uppercase;
 }
 
-.partners_link {
+.partners__list {
+    list-style-type: none;
+    padding: 25px 0px;
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 140px;
 }
 
-.partner {
+.partners__list-item {
     display: flex;
     flex-direction: column;
     color: white;
@@ -302,8 +305,15 @@ body {
     text-align: center;
 }
 
-.partner img {
+.partners__image {
     height: 75px;
+    margin-bottom: 10px;
+}
+
+.partner {
+}
+
+.partner img {
 }
 
 .arrow {
